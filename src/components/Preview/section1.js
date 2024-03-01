@@ -27,7 +27,7 @@ function renderSection1(props) {
             <div className={section1Styles.flex_col1}>
               <div className={section1Styles.info}>LET’S START</div>
               <h5 className={section1Styles.highlight}>
-                して無料で診断を受ける
+                LINE登録して無料で診断を受ける
               </h5>
             </div>
           </div>
