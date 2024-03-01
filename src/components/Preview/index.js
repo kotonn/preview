@@ -9,9 +9,14 @@ import styles from "./index.module.scss";
 function Preview(props) {
   return (
     <main className={cn(styles.main, props.className, "preview")}>
-      <video autoPlay muted loop className={styles.backgroundVideo}>
+      {/* <video autoPlay muted loop className={styles.backgroundVideo}>
         <source src="/assets/background.mp4" preload="auto" type="video/mp4" />
-      </video>
+      </video> */}
+      <img
+        src="/assets/background.png"
+        alt=""
+        className={styles.backgroundVideo}
+      />
       <div className={styles.black_container} />
       {renderSection1(props)}
     </main>
