@@ -1,0 +1,235 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.section1 {
+  display: flex;
+  justify-content: center; // コンテンツを中央に配置
+  align-items: center; // 水平方向も中央に配置
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2; // 必要に応じて調整
+}
+.rect2 {
+  width: 25%;
+}
+.content_box1 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.flex_col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0px auto;
+  width: 100%;
+}
+.hero_title {
+  color: rgb(0, 0, 0);
+  font: 700 80px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  letter-spacing: 12px;
+  text-align: center;
+  @include xxl {
+    font-size: 85px;
+  }
+  @include xl {
+    font-size: 80px;
+  }
+  @include lg {
+    font-size: 70px;
+  }
+  @include md {
+    font-size: 55px;
+  }
+  @include sm {
+    font-size: 55px;
+  }
+  @include xs {
+    font-size: 45px;
+  }
+  @include xxs {
+    font-size: 40px;
+  }
+  @include tn {
+    font-size: 35px;
+  }
+}
+.hero_title_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_title_span0 {
+  color: rgb(249, 210, 99);
+  font: 700 1em/1 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.hero_title_span1 {
+  color: rgb(255, 255, 255);
+  font: 700 1em/1 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.title {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 500 22px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  justify-content: center;
+  letter-spacing: 3px;
+  margin: 5% 0px 0px;
+  text-align: center;
+  width: 100%;
+  @include xxl {
+    font-size: 22px;
+    margin: 3% 0px 0px;
+  }
+  @include xl {
+    font-size: 20px;
+    margin: 3% 0px 0px;
+  }
+  @include lg {
+    font-size: 18px;
+    margin: 5% 0px 0px;
+  }
+  @include md {
+    font-size: 16px;
+  }
+  @include sm {
+    font-size: 15px;
+  }
+  @include xs {
+    font-size: 14px;
+  }
+  @include xxs {
+    font-size: 11px;
+    margin: 4% 0px 0px;
+  }
+  @include tn {
+    font-size: 10px;
+    margin: 4% 0px 0px;
+  }
+}
+.subtitle {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font: 500 20px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  justify-content: center;
+  letter-spacing: 2.2px;
+  margin: 7% 0px 0px;
+  text-align: center;
+
+  @include xxl {
+    font-size: 20px;
+    margin: 7% 0px 0px;
+  }
+  @include xl {
+    font-size: 18px;
+    margin: 7% 0px 0px;
+  }
+  @include lg {
+    font-size: 16px;
+    margin: 7% 0px 0px;
+  }
+  @include md {
+    font-size: 14px;
+    margin: 7% 0px 0px;
+  }
+  @include sm {
+    font-size: 12px;
+    margin: 7% 0px 0px;
+  }
+  @include xs {
+    font-size: 11px;
+    margin: 7% 0px 0px;
+  }
+  @include xxs {
+    font-size: 11px;
+    margin: 7% 0px 0px;
+  }
+  @include tn {
+    font-size: 10px;
+    margin: 7% 0px 0px;
+  }
+}
+.content_box {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px 3px 3px 3px;
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0px 0px;
+  @include xxl {
+    width: 35%;
+  }
+  @include xl {
+    width: 35%;
+  }
+  @include lg {
+    width: 35%;
+  }
+  @include md {
+    width: 40%;
+  }
+  @include sm {
+    width: 50%;
+  }
+  @include xs {
+    width: 60%;
+  }
+  @include xxs {
+    width: 65%;
+  }
+  @include tn {
+    width: 75%;
+  }
+}
+.flex_col1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+  margin: 5% auto;
+  width: 80%;
+  @include lg {
+    margin: 7% auto;
+  }
+}
+.info {
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 500 12px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  justify-content: center;
+  letter-spacing: 2.09px;
+  text-align: center;
+  @include lg {
+    align-items: flex-start;
+    font-size: 12px;
+  }
+  @include md {
+    font-size: 11px;
+  }
+  @include sm {
+    font-size: 9px;
+  }
+}
+.highlight {
+  color: rgb(0, 0, 0);
+  display: flex;
+  font: 500 15px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  justify-content: center;
+  letter-spacing: 2.49px;
+  text-align: center;
+  @include lg {
+    align-items: flex-start;
+    font-size: 14px;
+  }
+  @include md {
+    font-size: 11px;
+  }
+  @include sm {
+    font-size: 9px;
+  }
+}
+.image {
+  width: 25%;
+}
