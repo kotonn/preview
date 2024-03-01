@@ -10,7 +10,7 @@ function Preview(props) {
   return (
     <main className={cn(styles.main, props.className, "preview")}>
       <video autoPlay muted loop className={styles.backgroundVideo}>
-        <source src="/assets/background-movie.mov" type="video/mp4" />
+        <source src="/assets/background.mov" type="video/mp4" />
       </video>
       <div className={styles.black_container} />
       {renderSection1(props)}
